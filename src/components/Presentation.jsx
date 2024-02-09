@@ -17,7 +17,7 @@ const Presentation = () => {
     </h1>
         <h2 className="text-md md:text-2xl lg:text-3xl opacity-80 text-wrap">
             <span className="text-bold">+2 años de experiencia. </span>
-            <span className="text-purple-200/90 font-semibold">Desarrollador Web. </span>
+            <span className="text-purple-300 font-semibold">Desarrollador Web. </span>
             <span> De Córdoba, Argentina.</span>
             <span className="opacity-80">Especializado en crear webs únicas.</span>
         </h2>

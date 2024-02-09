@@ -4,33 +4,43 @@ import JsIcon from "./icons/Js";
 import ReactIcon from "./icons/ReactIcon";
 import TailwindIcon from "./icons/Tailwind";
 import CodeIcon from "./icons/Code";
+import SassIcon from "./icons/Sass"
+import AstroIcon from "./icons/Astro"
+import BootstrapIcon from "./icons/Bootstrap"
 
 const TAGS = {
   HTML: {
     name: "HTML5",
-    class: "bg-orange-200 text-white",
     icon: HtmlIcon,
   },
   CSS: {
     name: "CSS3",
-    class: "bg-blue-200 text-white",
     icon: Css3Icon,
   },
   JS: {
     name: "JavaScript",
-    class: "bg-yellow-200 text-black",
     icon: JsIcon,
   },
   REACT: {
     name: "React",
-    class: "bg-blue-200 text-white",
     icon: ReactIcon,
   },
   TAILWIND: {
     name: "Tailwind CSS",
-    class: "bg-white text-[#73bcf6]",
     icon: TailwindIcon,
   },
+  SASS: {
+    name: "Sass",
+    icon: SassIcon,
+  },
+  ASTRO: {
+    name: "Astro",
+    icon: AstroIcon
+  },
+  BOOTSTRAP: {
+    name: "Bootstrap",
+    icon: BootstrapIcon
+  }
 };
 
 const PROJECTS = [
@@ -38,21 +48,21 @@ const PROJECTS = [
     id: 1,
     title: "Landing page Escuela Miyazato",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam beatae eos animi corrupti similique itaque, sed totam possimus alias architecto quas. Natus, reprehenderit! Voluptatum porro itaque nesciunt, aliquid debitis maiores!",
+      "Proyecto final del curso de Desarrollador web de CoderHouse, diseñando un sitio web sobre La Escuela Miyazato de Karate Do. Aplicando las tecnologías aprendidas a lo largo del curso HTML, CSS, SASS, BOOTSTRAP, RESPONSIVE DESIGN.",
     link: "https://hiroshitomi.github.io/karate-do-miyazato/",
     github: "https://hiroshitomi.github.io/karate-do-miyazato/",
     image: "/miyazatodojo.webp",
-    tags: [TAGS.HTML, TAGS.CSS, TAGS.JS],
+    tags: [TAGS.HTML, TAGS.CSS, TAGS.JS, TAGS.SASS, TAGS.BOOTSTRAP],
   },
   {
     id: 2,
     title: "Landing page TESLA - clon",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam beatae eos animi corrupti similique itaque, sed totam possimus alias architecto quas. Natus, reprehenderit! Voluptatum porro itaque nesciunt, aliquid debitis maiores!",
+      "Aplicando Kaizen, he realizado el clon de la landing page de TESLA, practicando tecnologías como Astro, Tailwind, JS y React.",
     link: "https://tesla-landing-teal.vercel.app/",
     github: "https://github.com/hiroshitomi/tesla-landing",
     image: "/teslalanding.webp",
-    tags: [TAGS.REACT, TAGS.TAILWIND, TAGS.JS],
+    tags: [TAGS.REACT, TAGS.TAILWIND, TAGS.JS, TAGS.ASTRO],
   },
   {
     id: 3,
@@ -62,7 +72,7 @@ const PROJECTS = [
     link: "https://teteclothes.vercel.app/",
     github: "https://github.com/hiroshitomi/TeteClothes",
     image: "/teteclothes.webp",
-    tags: [TAGS.HTML, TAGS.CSS, TAGS.REACT, TAGS.JS],
+    tags: [TAGS.HTML, TAGS.CSS, TAGS.REACT, TAGS.JS, TAGS.BOOTSTRAP],
   },
 ];
 
@@ -89,7 +99,7 @@ const Projects = () => {
               </li>
             ))}
           </ul>
-          <div className="relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded group hover:bg-gradient-to-r from-gray-200/10 to-purple-800">
+          <div className="relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded group hover:bg-gradient-to-r from-gray-500/10 to-purple-300">
             <img
               src={image}
               alt={`Captura de pantalla del proyecto ${title}`}

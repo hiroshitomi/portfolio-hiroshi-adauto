@@ -7,7 +7,7 @@ const EXPERIENCES = [
     date: "Enero 2022 - Actualidad",
     title: "Frontend Developer BioSoft Online S.R.L",
     description:
-      "Desarrollando el frontend sobre sistemas de autorización en línea para Bioquímicos en Argentina.",
+      "Desarrollando el frontend sobre sistemas de autorizaciones en línea para Bioquímicos en Argentina, formando parte de un equipo de trabajo, aplicando metodologías ágiles para el proceso, desarrollo e implementación de los sistemas. Utilizando tecnologías del ecosistema Microsoft, C# y Blazor.",
     link: "",
   },
   {
@@ -15,7 +15,7 @@ const EXPERIENCES = [
     date: "Octubre 2022 - Actualidad",
     title: "Developer TeteClothes",
     description:
-      "Desarrollando la tienda online completa de un emprendimiento propio, utilizando React.",
+      "Desarrollando la tienda online completa de un emprendimiento propio, utilizando en el frontend React, JS y Bootstrap. El backend es serverless, utilizando Google Firebase para almacenar los datos. Hemos mejorado la presencia en internet y aumentado las ventas desde la creación de la tienda.",
     link: "",
   },
 ];
