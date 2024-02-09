@@ -6,7 +6,7 @@ const ExperienceItem = ({ date, title, description, link }) => {
         {date}
       </time>
       <h3 className="text-lg font-semibold text-purple-200/90">{title}</h3>
-      <p className="mb-4 text-base font-normal text-gray-500">{description}</p>
+      <p className="mb-4 text-base font-normal text-gray-300">{description}</p>
       {link && (
         <a
           href={link}
