@@ -1,10 +1,13 @@
 import {useState} from "react";
+import { useTranslation } from "react-i18next";
 
 const Header = () => {
   const [nav, setNav] = useState(false);
   const handleNav = () => {
     setNav(!nav);
   };
+
+  const {t, i18n} = useTranslation("global")
 
   return (
     <header id="header" className="py-2 w-full z-[9995]">
@@ -48,70 +51,78 @@ const Header = () => {
               className="focus:scale-110 hover:scale-110 transition"
               href="#top"
             >
-              Inicio
+              {t("nav.home")}
             </a>
             <a onClick={handleNav}
               className="focus:scale-110 hover:scale-110 transition"
               href="#sobre-mi"
             >
-              Sobre mí
+              {t("nav.aboutme")}
             </a>
             <a onClick={handleNav}
               className="focus:scale-110 hover:scale-110 transition"
               href="#experiencia"
             >
-              Experiencia
+              {t("nav.experience")}
             </a>
             <a onClick={handleNav}
               className="focus:scale-110 hover:scale-110 transition"
               href="#proyectos"
             >
-              Proyectos
+              {t("nav.projects")}
             </a>
             <a onClick={handleNav}
               className="focus:scale-110 hover:scale-110 transition"
               href="#contacto"
             >
-              Contacto
+              {t("nav.contact")}
             </a>
+            <div>
+              <button onClick={()=> i18n.changeLanguage("es")} className="px-2 py-1 rounded">ES</button>
+              <button onClick={()=> i18n.changeLanguage("en")} className="px-2 py-1 rounded">EN</button>
+            </div>
           </nav>
         ) : (
           ""
         )}
         <nav
           id="navbar-hiro"
-          className="hidden md:flex flex-row gap-x-10 opacity-80 mr-4 xl:mr-0"
+          className="hidden md:flex flex-row gap-x-10 opacity-80 mr-4 xl:mr-0 items-center"
         >
           <a
             className="focus:scale-110 hover:scale-110 transition"
             href="#top"
           >
-            Inicio
+            {t("nav.home")}
           </a>
           <a
             className="focus:scale-110 hover:scale-110 transition"
             href="#sobre-mi"
           >
-            Sobre mí
+            {t("nav.aboutme")}
           </a>
           <a
             className="focus:scale-110 hover:scale-110 transition"
             href="#experiencia"
           >
-            Experiencia
+            {t("nav.experience")}
           </a>
           <a
             className="focus:scale-110 hover:scale-110 transition"
             href="#proyectos"
           >
-            Proyectos
+            {t("nav.projects")}
           </a>
           <a
             className="focus:scale-110 hover:scale-110 transition"
             href="#contacto"
           >
-            Contacto
+            {t("nav.contact")}
           </a>
+          <div className="flex gap-x-2">
+              <button onClick={()=> i18n.changeLanguage("es")} className="hover:bg-gray-600 px-2 py-1 rounded">ES</button>
+              <button onClick={()=> i18n.changeLanguage("en")} className="hover:bg-gray-600 px-2 py-1 rounded">EN</button>
+            </div>
         </nav>
       </div>
     </header>

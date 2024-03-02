@@ -109,7 +109,7 @@ const Projects = () => {
               <h3 className="text-lg md:text-2xl font-bold text-white tracking-wider text-center mb-3">
                 {title}
               </h3>
-              <a href={link}>
+              <a href={link} target="_blank" rel="noopener noreferrer">
                 <p className="text-center p-1 md:p-3 mx-auto rounded-lg sm:w-1/2 bg-white text-gray-700 font-bold cursor-pointer text-md hover:bg-gray-400 duration-200 hover:text-white">
                   Explorar
                 </p>

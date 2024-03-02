@@ -1,0 +1,17 @@
+{
+    "header":{
+        "title": "Hey, Soy Hiroshi",
+        "yoe": "+2 años de experiencia.",
+        "webdev": "Desarrollador Web.",
+        "fromto": "De Córdoba, Argentina.",
+        "special": "Especializado en crear webs únicas.",
+        "badge": "Disponible para trabajar"
+    },
+    "nav": {
+        "home": "Inicio",
+        "aboutme": "Sobre mí",
+        "experience": "Experiencia",
+        "projects": "Proyectos",
+        "contact": "Contacto"
+    } 
+}

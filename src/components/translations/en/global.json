@@ -1,0 +1,17 @@
+{
+    "header":{
+        "title": "Hey, I'm Hiroshi",
+        "yoe": "+2 years of experience.",
+        "webdev": "Web developer.",
+        "fromto": "From Córdoba, Argentina.",
+        "special": "Specialized in creating unique websites.",
+        "badge": "Available to work"
+    },
+    "nav": {
+        "home": "Home",
+        "aboutme": "About me",
+        "experience": "Experience",
+        "projects": "Projects",
+        "contact": "Contact"
+    } 
+}
