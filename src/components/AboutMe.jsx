@@ -1,24 +1,29 @@
 import AboutIcon from "./icons/About";
+import { useTranslation } from "react-i18next"
 
 const AboutMe = () => {
+  const {t} = useTranslation("global")
+
   return (
     <div>
       <h2 className="text-3xl font-semibold mb-6 flex items-center gap-x-3">
         <AboutIcon className="size-10" />
-        Sobre mí
+        {t("section.aboutme.title")}
       </h2>
       <h2 className="text-md md:text-2xl lg:text-3xl opacity-80 text-wrap">
-        En constante aprendizaje aplicando la filosofía{" "}
+        {t("section.aboutme.constant")}{" "}
         <span className="text-purple-300 font-semibold">
-          <strong>Kaizen</strong>
-          <em> (pensamiento japonés de mejora continua).</em>
+          <strong>{t("section.aboutme.kaizen")}</strong>
+          <em> {t("section.aboutme.meaning")}</em>
         </span>{" "}
         <ul className="pt-5">
-          <li><span className="text-purple-300 font-semibold">Preparado</span> para resolver problemas.</li>
           <li>
-            <span className="text-purple-300 font-semibold">Capacitado</span> para trabajar de forma independiente y colaborativa.
+            <span className="text-purple-300 font-semibold">{t("section.aboutme.preparedto")}</span> {t("section.aboutme.preparedphrase")}
           </li>
-          <li>Gran <span className="text-purple-300 font-semibold">adaptabilidad.</span></li>
+          <li>
+            <span className="text-purple-300 font-semibold">{t("section.aboutme.trainedto")}</span> {t("section.aboutme.trainedphrase")}
+          </li>
+          <li>{t("section.aboutme.adaptphrase")} <span className="text-purple-300 font-semibold">{t("section.aboutme.adapt")}</span></li>
         </ul>
       </h2>
     </div>

@@ -1,4 +1,4 @@
-import {useState} from "react";
+import { useState } from "react";
 import { useTranslation } from "react-i18next";
 
 const Header = () => {
@@ -7,7 +7,7 @@ const Header = () => {
     setNav(!nav);
   };
 
-  const {t, i18n} = useTranslation("global")
+  const { t, i18n } = useTranslation("global");
 
   return (
     <header id="header" className="py-2 w-full z-[9995]">
@@ -47,39 +47,54 @@ const Header = () => {
             id="navbar-hiro"
             className="fixed top-0 w-full h-screen bg-black/90 flex flex-col justify-center items-center gap-4 text-2xl z-[95]"
           >
-            <a onClick={handleNav}
+            <a
+              onClick={handleNav}
               className="focus:scale-110 hover:scale-110 transition"
               href="#top"
             >
               {t("nav.home")}
             </a>
-            <a onClick={handleNav}
+            <a
+              onClick={handleNav}
               className="focus:scale-110 hover:scale-110 transition"
               href="#sobre-mi"
             >
               {t("nav.aboutme")}
             </a>
-            <a onClick={handleNav}
+            <a
+              onClick={handleNav}
               className="focus:scale-110 hover:scale-110 transition"
               href="#experiencia"
             >
               {t("nav.experience")}
             </a>
-            <a onClick={handleNav}
+            <a
+              onClick={handleNav}
               className="focus:scale-110 hover:scale-110 transition"
               href="#proyectos"
             >
               {t("nav.projects")}
             </a>
-            <a onClick={handleNav}
+            <a
+              onClick={handleNav}
               className="focus:scale-110 hover:scale-110 transition"
               href="#contacto"
             >
               {t("nav.contact")}
             </a>
             <div>
-              <button onClick={()=> i18n.changeLanguage("es")} className="px-2 py-1 rounded">ES</button>
-              <button onClick={()=> i18n.changeLanguage("en")} className="px-2 py-1 rounded">EN</button>
+              <button
+                onClick={() => i18n.changeLanguage("es")}
+                className="focus:bg-gray-600 px-2 py-1 rounded"
+              >
+                <img src="/ar-icon.png" alt="argentinian flag" />
+              </button>
+              <button
+                onClick={() => i18n.changeLanguage("en")}
+                className="focus:bg-gray-600 px-2 py-1 rounded"
+              >
+                <img src="/usa-icon.png" alt="usa flag" />
+              </button>
             </div>
           </nav>
         ) : (
@@ -89,10 +104,7 @@ const Header = () => {
           id="navbar-hiro"
           className="hidden md:flex flex-row gap-x-10 opacity-80 mr-4 xl:mr-0 items-center"
         >
-          <a
-            className="focus:scale-110 hover:scale-110 transition"
-            href="#top"
-          >
+          <a className="focus:scale-110 hover:scale-110 transition" href="#top">
             {t("nav.home")}
           </a>
           <a
@@ -120,9 +132,19 @@ const Header = () => {
             {t("nav.contact")}
           </a>
           <div className="flex gap-x-2">
-              <button onClick={()=> i18n.changeLanguage("es")} className="hover:bg-gray-600 px-2 py-1 rounded">ES</button>
-              <button onClick={()=> i18n.changeLanguage("en")} className="hover:bg-gray-600 px-2 py-1 rounded">EN</button>
-            </div>
+            <button
+              onClick={() => i18n.changeLanguage("es")}
+              className="focus:bg-gray-600 hover:bg-gray-600 px-2 py-1 rounded"
+            >
+              <img src="/ar-icon.png" alt="argentinian flag" />
+            </button>
+            <button
+              onClick={() => i18n.changeLanguage("en")}
+              className="focus:bg-gray-600 hover:bg-gray-600 px-2 py-1 rounded"
+            >
+              <img src="/usa-icon.png" alt="usa flag" />
+            </button>
+          </div>
         </nav>
       </div>
     </header>

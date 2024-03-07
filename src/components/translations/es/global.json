@@ -13,5 +13,25 @@
         "experience": "Experiencia",
         "projects": "Proyectos",
         "contact": "Contacto"
-    } 
+    },
+    "section": {
+        "aboutme":{
+            "title": "Sobre mi",
+            "constant": "En constante aprendizaje aplicando la filosofía",
+            "kaizen": "Kaizen",
+            "meaning": "(pensamiento japonés de mejora continua).",
+            "preparedto":"Preparado",
+            "preparedphrase": "para resolver problemas.",
+            "trainedto": "Capacitado",
+            "trainedphrase":"para trabajar de forma independiente y colaborativa.",
+            "adapt":"adaptabilidad.",
+            "adaptphrase": "Gran"
+        },
+        "experience": {
+            "title": "Experiencia laboral"
+
+        },
+        "projects":"Proyectos",
+        "contact":"Contacto"
+    }
 }
