@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 
+
 const Header = () => {
   const [nav, setNav] = useState(false);
   const handleNav = () => {
@@ -10,7 +11,7 @@ const Header = () => {
   const { t, i18n } = useTranslation("global");
 
   return (
-    <header id="header" className="py-2 w-full z-[9995]">
+    <header data-aos="fade-down" id="header" className="py-2 w-full z-[9995]">
       <div className="flex items-center justify-between xl:w-[1120px] mx-auto">
         <img
           className="rounded-full size-12 ml-4"

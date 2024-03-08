@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import AboutMe from "./components/AboutMe";
 import Contact from "./components/Contact";
 import Experience from "./components/Experience";
@@ -7,8 +8,14 @@ import Presentation from "./components/Presentation";
 import Projects from "./components/Projects";
 import SectionContainer from "./components/SectionContainer";
 import Layout from "./layouts/Layout";
+import Aos from "aos";
+import "aos/dist/aos.css"
 
 function App() {
+  useEffect(()=> {
+    Aos.init()
+  },[])
+  
   return (
     <Layout>
       <Header />

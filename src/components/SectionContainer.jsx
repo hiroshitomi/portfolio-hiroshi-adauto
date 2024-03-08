@@ -1,6 +1,6 @@
 const SectionContainer = ({id, className, children }) => {
   return (
-    <section id={id} className={`w-fullS lg:w-[740px] mx-auto ${className}`}>{children}</section>
+    <section data-aos="zoom-in" id={id} className={`w-fullS lg:w-[740px] mx-auto ${className}`}>{children}</section>
   );
 };
 
