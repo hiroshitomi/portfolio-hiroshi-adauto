@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio de Tomás Hiroshi Adauto — SSr Frontend Developer (React, Next.js, TypeScript)." />
+  <title>Hiroshi Adauto — Frontend Developer</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Header / Nav -->
+  <header class="header">
+    <nav class="nav" aria-label="Navegación principal">
+      <a href="#summary" class="nav__brand">Hiroshi Adauto</a>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav__menu" id="navMenu">
+        <li><a href="#summary" data-i18n="nav.summary">Inicio</a></li>
+        <li><a href="#experiencia" data-i18n="nav.experience">Experiencia</a></li>
+        <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
+        <li><a href="#estudios" data-i18n="nav.education">Estudios</a></li>
+        <li><a href="#contacto" data-i18n="nav.contact">Contacto</a></li>
+        <li>
+          <button class="lang-toggle" id="langToggle" aria-label="Cambiar idioma">
+            <span data-i18n="nav.langLabel">EN</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero / Summary -->
+    <section id="summary" class="section section--hero">
+      <p class="hero__eyebrow" data-i18n="hero.eyebrow">Frontend Developer · Argentina</p>
+      <h1 class="hero__name">Tomás Hiroshi Adauto</h1>
+      <p class="hero__title" data-i18n="hero.title">SSr Frontend Developer · React | Next.js | TypeScript</p>
+      <p class="hero__summary" data-i18n="hero.summary">
+        Desarrollador Frontend SSr con más de 3 años de experiencia desarrollando, optimizando y
+        escalando sitios web, especializado en React.js. Mi objetivo es traducir necesidades de
+        negocio en interfaces intuitivas y de alto rendimiento. Trabajo con filosofía Kaizen
+        (mejora continua) y metodologías ágiles.
+      </p>
+      <div class="hero__actions">
+        <a class="btn btn--primary" href="#contacto" data-i18n="hero.ctaContact">Contactar</a>
+        <a class="btn btn--ghost" href="#experiencia" data-i18n="hero.ctaExperience">Ver experiencia</a>
+      </div>
+    </section>
+
+    <!-- Experiencia -->
+    <section id="experiencia" class="section">
+      <h2 class="section__title" data-i18n="experience.heading">Experiencia laboral</h2>
+      <ol class="timeline">
+        <li class="timeline__item">
+          <div class="timeline__head">
+            <h3 class="timeline__role" data-i18n="experience.systel.role">Frontend Developer</h3>
+            <span class="timeline__date" data-i18n="experience.systel.date">Feb 2026 — Presente</span>
+          </div>
+          <p class="timeline__company">SYSTEL Global · <span data-i18n="experience.systel.place">Córdoba, Argentina</span></p>
+          <p class="timeline__desc" data-i18n="experience.systel.desc">
+            Área de Investigación y Desarrollo. Desarrollo y mantenimiento con ReactJS y TypeScript.
+            Gestión de tareas con herramientas ágiles y participación activa en ceremonias Scrum.
+          </p>
+        </li>
+
+        <li class="timeline__item">
+          <div class="timeline__head">
+            <h3 class="timeline__role" data-i18n="experience.flexxus.role">Frontend Developer</h3>
+            <span class="timeline__date" data-i18n="experience.flexxus.date">Ene 2025 — Feb 2026</span>
+          </div>
+          <p class="timeline__company">Flexxus · <span data-i18n="experience.flexxus.place">Córdoba, Argentina</span></p>
+          <p class="timeline__desc" data-i18n="experience.flexxus.desc">
+            Área de Investigación y Desarrollo. Desarrollo y mantenimiento de aplicaciones web,
+            colaboración con el equipo de UX, optimización de interfaces y testing para asegurar
+            calidad y rendimiento.
+          </p>
+        </li>
+
+        <li class="timeline__item">
+          <div class="timeline__head">
+            <h3 class="timeline__role" data-i18n="experience.biosoft.role">Frontend Developer</h3>
+            <span class="timeline__date" data-i18n="experience.biosoft.date">Abr 2022 — Dic 2024</span>
+          </div>
+          <p class="timeline__company">BioSoft OnLine S.R.L · <span data-i18n="experience.biosoft.place">Córdoba, Argentina</span></p>
+          <p class="timeline__desc" data-i18n="experience.biosoft.desc">
+            Ascendí de asistente al equipo de desarrollo como Frontend Developer. Modernización del
+            sistema de autorizaciones en el ecosistema Microsoft (C#, .NET y Blazor). Metodologías
+            ágiles (Scrum) con tableros Kanban (Trello) y comunicación vía Slack.
+          </p>
+        </li>
+
+        <li class="timeline__item">
+          <div class="timeline__head">
+            <h3 class="timeline__role" data-i18n="experience.tete.role">Frontend Developer (emprendimiento)</h3>
+            <span class="timeline__date" data-i18n="experience.tete.date">Oct 2022 — Oct 2024</span>
+          </div>
+          <p class="timeline__company">Teteclothes · <span data-i18n="experience.tete.place">Córdoba, Argentina</span></p>
+          <p class="timeline__desc" data-i18n="experience.tete.desc">
+            Emprendimiento personal de ropa. A cargo del desarrollo del sitio web y la tienda online
+            con React y JS, backend delegado en Firebase y deploy en Vercel. Mejora de visibilidad
+            online y aumento de ventas.
+          </p>
+        </li>
+
+        <li class="timeline__item">
+          <div class="timeline__head">
+            <h3 class="timeline__role" data-i18n="experience.galas.role">Frontend Web Developer (freelance)</h3>
+            <span class="timeline__date" data-i18n="experience.galas.date">Jul 2023 — Oct 2023</span>
+          </div>
+          <p class="timeline__company">Galas Baires · <span data-i18n="experience.galas.place">Buenos Aires, Argentina</span></p>
+          <p class="timeline__desc" data-i18n="experience.galas.desc">
+            Trabajo freelance en equipo para diseñar y desarrollar el sitio desde cero con JS, React
+            y Bootstrap, a partir de los diseños de UX. Coordinación con Scrum y Trello, deploy en
+            GitHub Pages y mejora de la visibilidad de la marca.
+          </p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+      <h2 class="section__title" data-i18n="skills.heading">Skills</h2>
+      <div class="skills">
+        <div class="skills__group">
+          <h3 class="skills__subtitle" data-i18n="skills.technical">Técnicas</h3>
+          <ul class="tags">
+            <li class="tag">React.js</li>
+            <li class="tag">Next.js</li>
+            <li class="tag">JavaScript</li>
+            <li class="tag">TypeScript</li>
+            <li class="tag">HTML5</li>
+            <li class="tag">CSS3 / SASS</li>
+            <li class="tag">Node.js</li>
+            <li class="tag">Docker</li>
+            <li class="tag">C# / .NET</li>
+            <li class="tag">Express</li>
+            <li class="tag">Nest</li>
+            <li class="tag">Prompt Engineering</li>
+            <li class="tag">Agentic / SDD</li>
+          </ul>
+        </div>
+        <div class="skills__group">
+          <h3 class="skills__subtitle" data-i18n="skills.soft">Blandas</h3>
+          <ul class="tags">
+            <li class="tag" data-i18n="skills.soft.kaizen">Kaizen / Mejora continua</li>
+            <li class="tag" data-i18n="skills.soft.agile">Metodologías ágiles (Scrum)</li>
+            <li class="tag" data-i18n="skills.soft.discipline">Disciplina (Karate-Do +20 años)</li>
+            <li class="tag" data-i18n="skills.soft.learning">Aprendizaje continuo</li>
+            <li class="tag" data-i18n="skills.soft.ux">Foco en experiencia de usuario</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Estudios -->
+    <section id="estudios" class="section">
+      <h2 class="section__title" data-i18n="education.heading">Estudios</h2>
+      <ul class="education">
+        <li class="education__item">
+          <h3 class="education__school">Universidad Tecnológica Nacional</h3>
+          <p class="education__detail" data-i18n="education.utn">Ingeniería en Sistemas · 2014 — 2017</p>
+        </li>
+        <li class="education__item">
+          <h3 class="education__school">Coderhouse</h3>
+          <p class="education__detail" data-i18n="education.coderhouse">Front End Developer React JS · 2022 — 2023</p>
+        </li>
+      </ul>
+      <h3 class="education__certs-title" data-i18n="education.certsTitle">Certificaciones</h3>
+      <ul class="tags">
+        <li class="tag" data-i18n="education.cert.react">FrontEnd React Career Certificate</li>
+        <li class="tag" data-i18n="education.cert.prompt">Curso de Prompt Engineering</li>
+        <li class="tag">React JS Certificate</li>
+        <li class="tag">Web Developer Certificate</li>
+        <li class="tag">JavaScript Certificate</li>
+      </ul>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="section section--contact">
+      <h2 class="section__title" data-i18n="contact.heading">Contacto</h2>
+      <p class="contact__text" data-i18n="contact.text">
+        ¿Te interesa trabajar juntos? Conectemos.
+      </p>
+      <div class="contact__links">
+        <a class="btn btn--primary" href="https://www.linkedin.com/in/hiroshidev" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a class="btn btn--ghost" href="https://github.com/hiroshitomi" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Tomás Hiroshi Adauto</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
